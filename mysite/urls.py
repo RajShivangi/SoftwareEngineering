@@ -23,6 +23,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("polls/", include("polls.urls")),
 
-    # Redirect the root URL "/" to "/polls/"
-    path('', RedirectView.as_view(url='/admin/polls/', permanent=False)),
+    # # Redirect the root URL "/" to "/polls/"
+    # path('', RedirectView.as_view(url='polls/', permanent=False)),
 ]
