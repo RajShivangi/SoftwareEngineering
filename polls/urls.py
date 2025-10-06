@@ -12,15 +12,8 @@ urlpatterns = [
     # path("<int:pk>/results/", views.ResultsView.as_view(), name="results"),
     # path("<int:question_id>/vote/", views.vote, name="vote"),
 
-    # IndexView - shows list of questions
     path("", views.IndexView.as_view(), name="index"),
-    
-    # DetailView - shows details for a specific question
-    path("<int:pk>/", views.DetailView.as_view(), name="detail"),
-    
-    # ResultsView - shows voting results
+    path("<int:pk>/", views.DetailView.as_view(), name="details"),
     path("<int:pk>/results/", views.ResultsView.as_view(), name="results"),
-    
-    # vote() - still typically a function-based view
     path("<int:question_id>/vote/", views.vote, name="vote"),
 ]
