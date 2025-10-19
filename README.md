@@ -14,6 +14,7 @@ Django Application Tutorial
 | With `&&service` | [![Coverage Status](https://coveralls.io/repos/github/RajShivangi/SoftwareEngineering/badge.svg?branch=main)](https://coveralls.io/github/RajShivangi/SoftwareEngineering?branch=main) |
 
 | Without `&&service` | [![Coverage Status](https://coveralls.io/repos/github/RajShivangi/SoftwareEngineering/badge.svg?branch=main)](https://coveralls.io/github/RajShivangi/SoftwareEngineering?branch=main) |
+
 | Without branch | [![Coverage Status](https://coveralls.io/repos/github/RajShivangi/SoftwareEngineering/badge.svg?branch=main)](https://coveralls.io/github/RajShivangi/SoftwareEngineering?branch=main) |
 
 ---
