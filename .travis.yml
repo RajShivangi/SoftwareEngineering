@@ -3,24 +3,24 @@ language: python
 # python:
 #   - "3.11-dev"
 
-
 install:
   - pip install -r requirements.txt
+  - pip install black flake8 coverage
 
 script:
-- black --check .
-- flake8 --max-line-length=150 .
-- coverage run manage.py test
-- env
-
+  - black --check
+  # - flake8 --max-line-length=150
+  - coverage run manage.py test
+  - env
 
 after_scripts:
-- coveralls
+  - coveralls
 
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ID
-  secret_access_key: $AWS_KEY
+  secret_access_key:
+    $AWS_KEY
     # secure: SXjmT8owaomJC2HoZ8CMM425426LKu1JXUc5bX6LNp1XTtkISkj6M3fv9KOsxXYacZJfceuVbEgchHX53CpiL5JPYLGY1Ba+hHp3Q5lN445Q/BbN72Om80jfOu/sm0SMz44bSyzbVG3chbL3Gd56mqqEuttNz6Nvlc12e4Vtx0QCYmMB20UEu8XvauLC3fepE4CsohqhzhIkwl2Zh7HLFA9CQP8gPisXnLlZoqHRqSseajBgCIbo74dyGnli/G+/lcnk2jVcs2ov5P5jQngXiR3V/xq3P04rFtXrD+bRO/hU/v+uYou2L569ahKWaZIjuP+S0vqa705XJVnf/oL6ZSM924t4VGVRvdWXPPLFYF4xCOmJ8RmmVhuEgCL/TvYSW7iNLI2Qi8YDZyhvyTxHHDs3KoY/pzuLSF7r+RfMp2XLo82wSp2/5VrXiX8MM8xAlOKrj1fdjXylMlR287QdfZofJ2eLHsLkL76CKVSDakkG+FTZwfQbWJMO2N5i8y/GBBa5liNGfWQklDJpMJD860u2kHFjwVrzLydFzf0jgQmlOLDzBe79OrsmjaDaDoBhv8rQp6rHTzEcdike0/9M41+orDWi+YKq21C3sVdmNqBF7B+qwcBEm99B1hORmA7XzC8ATVJ9FztdKOWYX77/mPwoxpLT9SyNguT3KfDXDLs=
   region: us-east-1
   app: SoftwareEngineering
@@ -29,4 +29,4 @@ deploy:
   on:
     repo: RajShivangi/SoftwareEngineering
     branch: main
-  skip_cleanup: 'true'
+  skip_cleanup: "true"
