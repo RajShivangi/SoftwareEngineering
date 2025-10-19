@@ -1,5 +1,7 @@
 # SoftwareEngineering  
-Django Application Tutorial  
+Django Application Tutorial 
+Shivangi Raj
+sr7731@nyu.edu 
 
 ---
 
@@ -12,9 +14,7 @@ Django Application Tutorial
 | Description | Badge |
 |--------------|--------|
 | With `&&service` | [![Coverage Status](https://coveralls.io/repos/github/RajShivangi/SoftwareEngineering/badge.svg?branch=main)](https://coveralls.io/github/RajShivangi/SoftwareEngineering?branch=main) |
-
 | Without `&&service` | [![Coverage Status](https://coveralls.io/repos/github/RajShivangi/SoftwareEngineering/badge.svg?branch=main)](https://coveralls.io/github/RajShivangi/SoftwareEngineering?branch=main) |
-
 | Without branch | [![Coverage Status](https://coveralls.io/repos/github/RajShivangi/SoftwareEngineering/badge.svg?branch=main)](https://coveralls.io/github/RajShivangi/SoftwareEngineering?branch=main) |
 
 ---
