@@ -1,4 +1,4 @@
 dist: focal
 language: shell
-script: echo "Testing"
+script: echo "Testing Travic"
 install: skip
