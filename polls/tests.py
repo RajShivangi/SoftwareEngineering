@@ -1,5 +1,6 @@
 from django.test import TestCase
 
+
 class BasicTestCase(TestCase):
     def test_addition(self):
         """Basic sanity check to ensure tests run."""

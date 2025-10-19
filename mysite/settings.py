@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-dwuk*cn_!ft3rl$bd=@0je6ldu**c())6d4s2h(f4d%uz(k*f=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['softwareeng-env.eba-3nwuskmb.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ["softwareeng-env.eba-3nwuskmb.us-east-1.elasticbeanstalk.com"]
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "polls.apps.PollsConfig"
+    "polls.apps.PollsConfig",
 ]
 
 MIDDLEWARE = [
@@ -118,7 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "static/"
-STATIC_ROOT = 'static'
+STATIC_ROOT = "static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
