@@ -1,0 +1,10 @@
+[flake8]
+max-line-length = 200
+ignore = E,W,F
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    */migrations/*,
+    build,
+    dist
