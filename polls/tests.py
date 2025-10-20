@@ -2,6 +2,7 @@ from django.test import TestCase
 import datetime
 from django.utils import timezone
 from polls.models import Question, Choice
+from django.urls import reverse
 
 
 class BasicTestCase(TestCase):
@@ -9,10 +10,6 @@ class BasicTestCase(TestCase):
         """Basic sanity check to ensure tests run."""
         print("Hello, World!")
         self.assertEqual(1 + 1, 2)
-
-    def test_truth(self):
-        """Ensure boolean logic works."""
-        self.assertTrue(True)
 
 
 class QuestionModelTests(TestCase):
@@ -62,3 +59,11 @@ class ChoiceModelTests(TestCase):
         )
         choice = Choice.objects.create(question=q, choice_text="Option A", votes=0)
         self.assertEqual(str(choice), "Option A")
+
+class PollsViewTests(TestCase):
+    """Extra test to increase coverage: verify index view returns HTTP 200."""
+
+    def test_index_view_loads_successfully(self):
+        """The index page should load without errors."""
+        response = self.client.get(reverse("polls:index"))
+        self.assertEqual(response.status_code, 200)
